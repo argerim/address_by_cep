@@ -6,7 +6,7 @@
 
 Adicione a seguinte linha no seu arquivo Gemfile:
 
-	gem 'addree_by_cep'
+	gem 'address_by_cep'
 
 ###Execute
 
