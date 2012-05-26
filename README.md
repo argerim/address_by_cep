@@ -51,8 +51,8 @@ Pronto agora é so startar sua aplicação, abrir a view new de user, colocar um
 
 	* Faça um fork do projeto.
 	* Faça suas adições e/ou modificações.
-	* Envie um pull request via Github.
 	* Execute rake cucumber para os testes.
+	* Envie um pull request via Github.
 
 ## Copyright
 
