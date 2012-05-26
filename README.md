@@ -1,6 +1,6 @@
 #Address By Cep
 
-É uma gem que gera um model address e partial para cadastro de endereço de forma polimorfica, fazendo uma busca de um endereço ao web service dado um cep.
+É uma gem que gera um model address e partial para cadastro de endereço de forma polimórfica, fazendo uma busca de um endereço ao web service dado um cep.
 
 ##Instalando
 
@@ -23,7 +23,7 @@ Gere o model e partial:
 	rails g address_by_cep:models
 	rake db:migrate
 
-Crie um CRUD onde ira adicionar o endereço:
+Crie um CRUD onde irá adicionar o endereço:
 
 	Ex.:
 		rails g scaffold user name:string
@@ -33,7 +33,7 @@ Abra o `_form` de user e adicione a seguinte linha:
 
 	<%= render :partial => "addresses/addressable_form", :locals => { :f => f } %>
 
-Você pode adicionar quantos for necessario, pois a gem faz a busca de forma independente para cada partial.
+Você pode adicionar quantos for necessário, pois a gem faz a busca de forma indepêndente para cada partial.
 
 Adicione a seguinte linha na action new do controller users:
 
@@ -45,14 +45,14 @@ Abra o model de user e coloque as seguintes linhas:
 	has_many :addresses, :as => :addressable
 	accepts_nested_attributes_for :addresses
 
-Pronto agora é so startar sua aplicação, abrir a view new de user, colocar um cep valido e pressionar tab ou tirar o foco do campo CEP, pois a busca é feito pelo metodo `onBlur`.
+Pronto agora é so startar sua aplicação, abrir a view new de user, colocar um cep válido e pressionar tab ou tirar o foco do campo CEP, pois a busca é feita pelo metodo `onBlur`.
 
 ##Como contribuir
 
 	* Faça um fork do projeto.
-	* Faça suas adições ou modificações.
+	* Faça suas adições e/ou modificações.
 	* Envie um pull request via Github.
 
 ## Copyright
 
-Copyright (c) 2012 Rogerio Medeiros. See [LICENSE](https://github.com/argerim/select2-rails/blob/master/LICENSE) for details.
+Copyright (c) 2012 Rogerio Medeiros. Veja [LICENSE](https://github.com/argerim/address_by_cep/blob/master/LICENSE) para mais detalhes.
