@@ -14,23 +14,22 @@ Adicione a seguinte linha no seu arquivo Gemfile:
 
 ##Como usar
 
-Crie uma aplicação rails
+Crie uma aplicação rails:
 
 	rails new testando_address_by_cep
 
-Gere o model e partial
+Gere o model e partial:
 
 	rails g address_by_cep:models
 	rake db:migrate
 
-Crie um CRUD onde ira adicionar o endereço
+Crie um CRUD onde ira adicionar o endereço:
 
-	Ex.: 
-
+	Ex.:
 		rails g scaffold user name:string
 		rake db:migrate
 
-Abra o _form de user e adicione a seguinte linha
+Abra o `_form` de user e adicione a seguinte linha:
 
 	<%= render :partial => "addresses/addressable_form", :locals => { :f => f } %>
 
@@ -46,4 +45,14 @@ Abra o model de user e coloque as seguintes linhas:
 	has_many :addresses, :as => :addressable
 	accepts_nested_attributes_for :addresses
 
-Pronto agora é so startar sua aplicação, abrir a view new de user, colocar um cep valido e pressionar tab ou tirar o foco do campo CEP, pois a busca é feito pelo onBlur.
+Pronto agora é so startar sua aplicação, abrir a view new de user, colocar um cep valido e pressionar tab ou tirar o foco do campo CEP, pois a busca é feito pelo metodo `onBlur`.
+
+##Como contribuir
+
+	* Faça um fork do projeto.
+	* Faça suas adições ou modificações.
+	* Envie um pull request via Github.
+
+## Copyright
+
+Copyright (c) 2012 Rogerio Medeiros. See [LICENSE](https://github.com/argerim/select2-rails/blob/master/LICENSE) for details.
