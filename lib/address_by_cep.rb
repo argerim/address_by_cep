@@ -25,7 +25,7 @@ module AddressByCep
   end
 
   module Rails
-    require "address_by_cep/engine"
+    require "generators/address_by_cep/engine"
   end
 
 end
