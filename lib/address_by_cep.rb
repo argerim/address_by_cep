@@ -23,4 +23,9 @@ module AddressByCep
       end
 
   end
+
+  module Rails
+    require "address_by_cep/engine"
+  end
+
 end
