@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.version     = AddressByCep::VERSION
   s.authors     = ["Rogerio Medeiros"]
   s.email       = ["argerim@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/argerim/address_by_cep"
+  s.summary     = %q{Encontre seu endereço via cep}
+  s.description = %q{É uma gem que gera um model address e partial para cadastro de endereço de forma polimórfica, fazendo uma busca de um endereço ao web service dado um cep.}
 
   s.rubyforge_project = "address_by_cep"
 
