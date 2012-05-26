@@ -19,3 +19,9 @@ end
 Then(/^I should see "([^\"]*)" when running "([^\"]*)"$/) do |expected_response, command|
   `cd #{@current_directory} && #{command}`.should include(expected_response)
 end
+
+Then(/^I should see "(.*)" in file "([^\"]*)"$/) do |content, short_path|
+  path = File.join(@current_directory, short_path)
+  File.should exist(path)
+  File.readlines(path).join.should include(content)
+end

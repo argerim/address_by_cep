@@ -20,7 +20,7 @@ Crie uma aplicação rails:
 
 Gere o model e partial:
 
-	rails g address_by_cep:models
+	rails g address_by_cep:model
 	rake db:migrate
 
 Crie um CRUD onde irá adicionar o endereço:

@@ -1,5 +1,5 @@
 module AddressByCep
-  class ModelsGenerator < Base
+  class ModelGenerator < Base
     include Rails::Generators::Migration
 
     source_root File.expand_path('../templates', __FILE__)
@@ -11,8 +11,12 @@ module AddressByCep
     def create_partial
       copy_file 'partial_addressable_form.html.erb', "app/views/addresses/_addressable_form.html.erb"
     end
+
+    def add_js_in_application_js
+      add_js_reference
+    end
      
-    def create_models
+    def create_model
       template 'address_model.rb', "app/models/address.rb"
     end
 

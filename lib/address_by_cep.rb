@@ -7,12 +7,10 @@ module AddressByCep
       "rails generate address_by_cep:#{generator_name} #{self.arguments.map{ |a| a.usage }.join(' ')} [options]"
     end
 
-  private
+    private
 
-      def add_gem(name, options = {})
-        gemfile_content = File.read(destination_path("Gemfile"))
-        File.open(destination_path("Gemfile"), 'a') { |f| f.write("\n") } unless gemfile_content =~ /\n\Z/
-        gem name, options unless gemfile_content.include? name
+      def add_js_reference
+        insert_into_file "app/assets/javascripts/application.js", "//= require addresses\n", :after => "jquery_ujs\n"
       end
 
       def print_usage
@@ -23,7 +21,6 @@ module AddressByCep
       def destination_path(path)
         File.join(destination_root, path)
       end
-
 
   end
 end
