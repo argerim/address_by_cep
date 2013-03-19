@@ -32,8 +32,5 @@ module AddressByCep
       migration_template 'migration.rb', "db/migrate/create_table_addresses.rb"
     end
        
-  end
-  module Rails
-    require 'engine'
-  end
+  end 
 end
