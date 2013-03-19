@@ -1,2 +1,4 @@
-class Engine < ::Rails::Engine
+module AddressByCep
+	class Engine < ::Rails::Engine
+	end
 end
