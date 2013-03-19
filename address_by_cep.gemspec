@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "generators/version"
+require File.expand_path("../lib/generators/version", __FILE__)
 
 
 Gem::Specification.new do |s|

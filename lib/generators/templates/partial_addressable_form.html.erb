@@ -1,0 +1,30 @@
+<%= f.fields_for :addresses do |address_form| %>
+  <div class="field">
+    <%= address_form.label :zip_code, "CEP" %><br />
+    <%= address_form.text_field :zip_code, :maxlength => 10, :onBlur => "get_address(this)" %>
+  </div>
+  <div class="field">
+    <%= address_form.label :street %><br />
+    <%= address_form.text_field :street %>
+  </div>
+  <div class="field">
+    <%= address_form.label :number %><br />
+    <%= address_form.text_field :number %>
+  </div>
+  <div class="field">
+    <%= address_form.label :neighborhood %><br />
+    <%= address_form.text_field :neighborhood %>
+  </div>
+  <div class="field">
+    <%= address_form.label :city %><br />
+    <%= address_form.text_field :city %>
+  </div>
+  <div class="field">
+    <%= address_form.label :state %><br />
+    <%= address_form.text_field :state %>
+  </div>
+  <div class="field">
+    <%= address_form.label :complement %><br />
+    <%= address_form.text_field :complement %>
+  </div>
+<% end %>
