@@ -1,6 +1,2 @@
-module AddressByCep
-	module Rails
-    class Engine < ::Rails::Engine
-    end
-  end
+class Engine < ::Rails::Engine
 end
