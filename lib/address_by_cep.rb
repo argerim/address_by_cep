@@ -1,4 +1,5 @@
 require 'rails/generators/base'
+require 'generators/address_by_cep/engine'
 
 module AddressByCep
   class Base < Rails::Generators::Base
@@ -22,10 +23,6 @@ module AddressByCep
         File.join(destination_root, path)
       end
 
-  end
-
-  module Rails
-    require "generators/address_by_cep/engine"
   end
 
 end
