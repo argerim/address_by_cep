@@ -1,3 +1,4 @@
+require "rails/generators/active_record"
 module AddressByCep
   class ModelGenerator < Base
     include Rails::Generators::Migration
