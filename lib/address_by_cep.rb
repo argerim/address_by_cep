@@ -1,7 +1,11 @@
 require 'rails/generators/base'
-require 'generators/address_by_cep/model_generator'
 
 module AddressByCep
+
+  module Rails
+    require "generators/address_by_cep/engine"
+  end
+  
   class Base < Rails::Generators::Base
  
     def self.banner
@@ -23,10 +27,6 @@ module AddressByCep
         File.join(destination_root, path)
       end
 
-  end
-
-  module Rails
-    require "generators/address_by_cep/engine"
   end
 
 end
