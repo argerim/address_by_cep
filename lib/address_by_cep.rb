@@ -2,10 +2,8 @@ require 'rails/generators/base'
 
 module AddressByCep
 
-  module Rails
-    require "generators/address_by_cep/engine"
-  end
-  
+  require "generators/address_by_cep/engine"
+
   class Base < Rails::Generators::Base
  
     def self.banner
