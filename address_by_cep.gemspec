@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "generators/address_by_cep/version"
+require "address_by_cep/version"
 
 
 Gem::Specification.new do |s|
