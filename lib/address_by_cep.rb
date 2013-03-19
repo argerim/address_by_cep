@@ -1,5 +1,4 @@
 require 'rails/generators/base'
-#require 'generators/address_by_cep/engine'
 
 module AddressByCep
   class Base < Rails::Generators::Base
