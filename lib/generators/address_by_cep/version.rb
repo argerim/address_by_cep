@@ -1,3 +1,3 @@
 module AddressByCep
-  VERSION = "0.0.7"
+  VERSION = "0.0.5"
 end
